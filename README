@@ -1,0 +1,12 @@
+# Installation guide for CentOS 7 (Linux Distribution)
+1. install service package
+$ rpm –ivh xl2tpd-1.3.6-8.el7.x86_64.rpm
+
+2. decompress archive file
+$ tar -zxvf vpn.tar.gz -C /
+
+3. usage (require 'root' or 'sudo')
+$ vpn-connect -c	# set username and password
+$ vpn-connect   	# connect
+$ vpn-connect -d	# disconnect
+$ vpn-connect -r	# re-connect
